@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Federico Gauna, desarrollador Backend .NET y estudiante de la Tecnicatura Universitaria en Programación en la UTN. Proyectos, conocimientos y contacto.">
+    <meta name="keywords" content="Federico Gauna, desarrollador backend, .NET, C#, C++, SQL, portfolio, programación">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Federico Gauna">
+    <title>Federico Gauna | Desarrollador Backend .NET</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Acceso rápido para usuarios de teclado y lectores de pantalla -->
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+
+    <!-- ============================================================
+         1. MENÚ / HEADER
+         Menú fijo y hamburguesa sin JavaScript (checkbox + label).
+         ============================================================ -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Navegación principal">
+            <a class="brand" href="#inicio" aria-label="Ir al inicio del portfolio de Federico Gauna">
+                <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+                <span>Federico Gauna</span>
+            </a>
+
+            <input class="nav-toggle" type="checkbox" id="menu-toggle" aria-label="Abrir o cerrar menú de navegación">
+            <label class="hamburger" for="menu-toggle" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#conocimientos">Conocimientos</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#redes">Redes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        <!-- ========================================================
+             2. PRESENTACIÓN INICIAL
+             Reemplazar img/foto-perfil.jpg por la foto definitiva.
+             ======================================================== -->
+        <section class="hero section" id="inicio" aria-labelledby="titulo-principal">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="code-kicker"><span aria-hidden="true">//</span> portfolio.cs</p>
+                    <h1 id="titulo-principal">Federico Gauna</h1>
+                    <p class="hero-role">Desarrollador Backend <span>.NET</span></p>
+                    <p class="hero-lead">Estudiante de la Tecnicatura Universitaria en Programación en la UTN.</p>
+
+                    <div class="hero-actions" aria-label="Acciones principales">
+                        <a class="button button-primary" href="#proyectos">Ver proyectos</a>
+                        <a class="button button-secondary" href="cv/tu cv.pdf" download>Descargar CV</a>
+                    </div>
+
+                    <div class="terminal-line" aria-label="Estado profesional">
+                        <span class="prompt" aria-hidden="true">$</span>
+                        <span>focus --backend --dotnet --learning</span>
+                    </div>
+                </div>
+
+                <figure class="profile-shell">
+                    <div class="window-bar" aria-hidden="true">
+                        <span></span><span></span><span></span>
+                        <small>perfil.jpg</small>
+                    </div>
+                    <div class="profile-photo-wrap">
+                        <img class="profile-photo" src="img/foto-perfil.jpg" alt="Foto de perfil de Federico Gauna" width="760" height="760">
+                    </div>
+                    <figcaption>developer_profile.render()</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             3. SOBRE MÍ
+             ======================================================== -->
+        <section class="section section-light" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">01 / sobre_mi</p>
+                    <h2 id="titulo-sobre-mi">Información general</h2>
+                </div>
+
+                <div class="about-grid">
+                    <article class="about-copy card-light">
+                        <p>Me interesa especialmente el desarrollo backend. Disfruto aprendiendo nuevas tecnologías y mejorando mis habilidades de programación. Mi objetivo es adquirir más experiencia profesional y contribuir a proyectos de software útiles.</p>
+                    </article>
+
+                    <div class="quick-facts" aria-label="Datos rápidos">
+                        <article class="fact-card">
+                            <span class="fact-key">ubicación</span>
+                            <strong>Buenos Aires, Argentina</strong>
+                        </article>
+                        <article class="fact-card">
+                            <span class="fact-key">idiomas</span>
+                            <strong>Inglés B1</strong>
+                        </article>
+                        <article class="fact-card">
+                            <span class="fact-key">educación</span>
+                            <strong>Tecnicatura Universitaria en Programación</strong>
+                        </article>
+                        <article class="fact-card">
+                            <span class="fact-key">experiencia actual</span>
+                            <strong>Proyectos de la Facultad</strong>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="timeline-block">
+                    <h3><span aria-hidden="true">&gt;</span> Timeline de experiencia</h3>
+                    <ol class="timeline">
+                        <li>
+                            <time datetime="2022">2022 - hoy</time>
+                            <div>
+                                <strong>Analista</strong>
+                                <p>Argentum Consulting S.A.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             4. CONOCIMIENTOS
+             ======================================================== -->
+        <section class="section" id="conocimientos" aria-labelledby="titulo-conocimientos">
+            <div class="container">
+                <div class="section-heading heading-dark">
+                    <p class="section-label">02 / stack</p>
+                    <h2 id="titulo-conocimientos">Conocimientos</h2>
+                    <p>Herramientas y tecnologías con las que vengo trabajando y formándome.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-group">
+                        <div class="skill-icon" aria-hidden="true">{ }</div>
+                        <h3>Backend y datos</h3>
+                        <div class="skill-tags">
+                            <span>C#</span>
+                            <span>.NET</span>
+                            <span>SQL</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-group">
+                        <div class="skill-icon" aria-hidden="true">++</div>
+                        <h3>Programación</h3>
+                        <div class="skill-tags">
+                            <span>C++</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-group">
+                        <div class="skill-icon" aria-hidden="true">&lt;/&gt;</div>
+                        <h3>Web</h3>
+                        <div class="skill-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             5. PROYECTOS
+             Reemplazar la imagen placeholder por una captura real.
+             ======================================================== -->
+        <section class="section section-light" id="proyectos" aria-labelledby="titulo-proyectos">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">03 / proyectos</p>
+                    <h2 id="titulo-proyectos">Proyectos</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="img/proyecto-gestion-articulos.jpg" alt="Vista de referencia del proyecto de gestión de artículos" width="1280" height="720">
+                            <span class="project-badge">TP facultad</span>
+                        </div>
+
+                        <div class="project-content">
+                            <p class="project-path">~/proyectos/tp-winforms</p>
+                            <h3>TP de la facultad</h3>
+
+                            <dl class="project-meta">
+                                <div>
+                                    <dt>Género</dt>
+                                    <dd>Gestión / CRUD</dd>
+                                </div>
+                                <div>
+                                    <dt>Motor</dt>
+                                    <dd>.NET + Windows Forms</dd>
+                                </div>
+                                <div>
+                                    <dt>Contexto</dt>
+                                    <dd>Trabajo práctico universitario</dd>
+                                </div>
+                                <div>
+                                    <dt>Rol</dt>
+                                    <dd>Desarrollador</dd>
+                                </div>
+                            </dl>
+
+                            <p class="project-description">Aplicación de escritorio para gestionar artículos, desarrollada como trabajo práctico de la facultad.</p>
+
+                            <a class="button button-primary" href="https://github.com/maxibian/TPWinForm_Equipo2" target="_blank" rel="noopener noreferrer" aria-label="Ver el proyecto TPWinForm Equipo 2 en GitHub, abre en una pestaña nueva">
+                                Ver en GitHub
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             6. REDES
+             SVG inline: no requiere librerías ni JavaScript.
+             ======================================================== -->
+        <section class="section" id="redes" aria-labelledby="titulo-redes">
+            <div class="container">
+                <div class="section-heading heading-dark">
+                    <p class="section-label">04 / redes</p>
+                    <h2 id="titulo-redes">Encontrame online</h2>
+                </div>
+
+                <div class="social-grid">
+                    <a class="social-card" href="https://www.linkedin.com/in/federico-gauna-629669290" target="_blank" rel="noopener noreferrer" aria-label="Abrir LinkedIn de Federico Gauna en una pestaña nueva">
+                        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                            <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S.02 4.88.02 3.5 1.13 1 2.5 1s2.48 1.12 2.48 2.5ZM.34 8h4.32v14H.34V8Zm6.83 0h4.14v1.91h.06c.58-1.1 1.99-2.26 4.1-2.26 4.39 0 5.2 2.89 5.2 6.64V22h-4.31v-6.84c0-1.63-.03-3.73-2.27-3.73-2.28 0-2.63 1.78-2.63 3.61V22H7.17V8Z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                        <small>/in/federico-gauna</small>
+                    </a>
+
+                    <a class="social-card" href="https://github.com/Fgauna-0" target="_blank" rel="noopener noreferrer" aria-label="Abrir GitHub de Federico Gauna en una pestaña nueva">
+                        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                            <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.02c-3.21.7-3.89-1.37-3.89-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.3-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.17 1.18a10.97 10.97 0 0 1 5.77 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.03c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/>
+                        </svg>
+                        <span>GitHub</span>
+                        <small>@Fgauna-0</small>
+                    </a>
+
+                    <a class="social-card" href="mailto:federico.tomas.gauna@hotmail.com" target="_blank" rel="noopener noreferrer" aria-label="Enviar un email a Federico Gauna">
+                        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                            <path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm10 8.2L21.4 6H2.6L12 12.2ZM2 18h20V8.3l-9.45 6.25a1 1 0 0 1-1.1 0L2 8.3V18Z"/>
+                        </svg>
+                        <span>Email</span>
+                        <small>federico.tomas.gauna@hotmail.com</small>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             7. CONTACTO
+             IMPORTANTE: reemplazar TU_ID por el ID real de Formspree.
+             ======================================================== -->
+        <section class="section section-light" id="contacto" aria-labelledby="titulo-contacto">
+            <div class="container contact-grid">
+                <div class="contact-copy">
+                    <div class="section-heading">
+                        <p class="section-label">05 / contacto</p>
+                        <h2 id="titulo-contacto">Hablemos</h2>
+                    </div>
+                    <p>¿Tenés una propuesta, una oportunidad o querés conversar sobre desarrollo? Podés escribirme desde este formulario.</p>
+                    <p class="contact-terminal"><span aria-hidden="true">$</span> send-message --to federico</p>
+                </div>
+
+                <form class="contact-form" action="https://formspree.io/f/TU_ID" method="POST">
+                    <div class="form-field">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                    </div>
+
+                    <button class="button button-primary" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© 2026 Federico Gauna</p>
+            <p class="footer-code" aria-hidden="true">&lt;/portfolio&gt;</p>
+        </div>
+    </footer>
+</body>
+</html>
